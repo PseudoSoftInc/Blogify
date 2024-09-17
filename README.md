@@ -1,4 +1,4 @@
-# Spring Boot Blog Application
+# Blogify
 
 This repository contains a blog application built with Spring Boot, utilizing Spring Security for robust authentication and MySQL for data persistence. The application allows users to create, edit, and delete blog posts. Authentication is managed via Spring Security, ensuring that only authenticated users can perform certain actions.
 
