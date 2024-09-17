@@ -1,0 +1,28 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: blogs
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_blog
+    #    ?createDatabaseIfNotExist=true # Works for sql and some other databases
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    showSql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  servlet:
+    multipart:
+      #      max-file-size: 128KB
+      #      max-request-size: 128KB
+      enabled: true
+
+app:
+  upload:
+    base-folder: "public"
+    thumbnail-location: "uploads/thumbnails"
